@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstFragment">
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.ruchitha.navigationcomponent.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_blueFragment2"
+            app:destination="@id/blueFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_redFragment2"
+            app:destination="@id/redFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_greenFragment2"
+            app:destination="@id/greenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/redFragment"
+        android:name="com.ruchitha.navigationcomponent.RedFragment"
+        android:label="fragment_red"
+        tools:layout="@layout/fragment_red" />
+    <fragment
+        android:id="@+id/blueFragment"
+        android:name="com.ruchitha.navigationcomponent.BlueFragment"
+        android:label="fragment_blue"
+        tools:layout="@layout/fragment_blue" />
+    <fragment
+        android:id="@+id/greenFragment"
+        android:name="com.ruchitha.navigationcomponent.GreenFragment"
+        android:label="fragment_green"
+        tools:layout="@layout/fragment_green" />
+</navigation>
